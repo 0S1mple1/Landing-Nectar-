@@ -1,0 +1,9 @@
+{
+  "sddkit": {
+    "version": "0.1.1"
+  },
+  "adapter": {
+    "name": "vscode",
+    "version": "0.1.0"
+  }
+}
