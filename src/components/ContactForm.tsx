@@ -1,6 +1,5 @@
 import { useState, type FormEvent } from 'react'
-
-const whatsappNumber = '5562991267068'
+import { whatsappNumber } from '../config/whatsapp'
 
 export default function ContactForm() {
   const [name, setName] = useState('')
@@ -9,6 +8,11 @@ export default function ContactForm() {
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
+
+    if (!whatsappNumber) {
+      setFormError('O contato pelo WhatsApp está indisponível no momento.')
+      return
+    }
 
     const cleanName = name.trim()
     const cleanMessage = message.trim()
@@ -42,7 +46,9 @@ export default function ContactForm() {
             Preencha seus dados e continue a conversa com a Néctar pelo
             WhatsApp.
           </p>
-          <p className="mt-8 font-medium text-amber-200">+55 62 99126-7068</p>
+          <p className="mt-8 font-medium text-amber-200">
+            {whatsappNumber ?? 'Contato indisponível no momento.'}
+          </p>
         </div>
         <div className="rounded-3xl bg-white p-6 text-stone-900 shadow-xl shadow-black/10 sm:p-9">
           <form onSubmit={handleSubmit} noValidate>
