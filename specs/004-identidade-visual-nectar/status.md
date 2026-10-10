@@ -10,11 +10,11 @@ Criada em: 2026-10-09
 
 ## Estado
 
-CURRENT_STATE: EXECUTION_COMPLETED
+CURRENT_STATE: VALIDATED
 
 ## Etapa
 
-Execução concluída; a variante limpa “Néctar” aprovada pelo usuário foi preparada e integrada.
+Validação concluída e aprovada; todos os critérios de aceite passaram.
 
 ## Última atualização
 
@@ -30,7 +30,7 @@ Execução concluída; a variante limpa “Néctar” aprovada pelo usuário foi
 - [x] Critérios de aceite
 - [x] Tasks
 - [x] Execução
-- [ ] Validação
+- [x] Validação
 
 ## Dúvidas pendentes
 
@@ -46,7 +46,7 @@ TASK-001 concluída: fundo verde removido, lettering “Néctar” preservado e 
 
 ## Próxima ação
 
-Iniciar /sdd-validate e verificar os critérios de aceite atualizados.
+Spec concluída; CA-001, CA-002 e CA-003 passaram na validação final.
 
 ## Histórico
 
@@ -66,3 +66,4 @@ Iniciar /sdd-validate e verificar os critérios de aceite atualizados.
 | 2026-10-10 | EXECUTION_IN_PROGRESS | Retomada da execução após VALIDATION_FAILED; reaberta TASK-001 para corrigir CA-002 |
 | 2026-10-10 | EXECUTION_IN_PROGRESS | Usuário aprovou usar a nova variante limpa “Néctar”; requisito CA-002 e TASK-001 atualizados para refletir a imagem aprovada |
 | 2026-10-10 | EXECUTION_COMPLETED | TASK-001 concluída com PNG transparente recortado e aprovado visualmente sobre #50963E; build TypeScript/Vite aprovado |
+| 2026-10-10 | VALIDATED | CA-001, CA-002 e CA-003 passaram; navegador responsivo, transparência do PNG, paleta, contraste e build verificados |

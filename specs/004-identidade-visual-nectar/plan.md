@@ -56,7 +56,7 @@ Critério:
 >
 > Então ambos apresentam a logo fornecida, sem as representações provisórias anteriores e sem distorção de proporção.
 
-Status: PENDENTE
+Status: PASSOU
 
 ### CA-002 — Marca isolada e recorte íntegro
 
@@ -72,7 +72,7 @@ Critério:
 >
 > Então somente o lettering “Néctar” e o elemento gráfico presentes na imagem permanecem visíveis, sem o fundo original, com todos os elementos completos e sem excesso de margem ao redor.
 
-Status: PENDENTE
+Status: PASSOU
 
 ### CA-003 — Verde aplicado como cor principal
 
@@ -88,7 +88,7 @@ Critério:
 >
 > Então #50963E (RGB 80, 150, 62) é usado como cor principal em lugar do vinho e âmbar como cores principais, e textos e controles permanecem legíveis.
 
-Status: PENDENTE
+Status: PASSOU
 
 ## 4. Matriz de Rastreabilidade
 
