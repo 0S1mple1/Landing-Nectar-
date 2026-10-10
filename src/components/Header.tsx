@@ -9,14 +9,17 @@ const links = [
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-20 border-b border-amber-950/10 bg-[#fffaf0]/95 backdrop-blur">
+    <header className="sticky top-0 z-20 border-b border-brand/15 bg-[#fffaf0]/95 backdrop-blur">
       <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-5 py-4 sm:px-8 lg:flex-row">
         <a
           href="#home"
-          className="font-serif text-2xl font-bold tracking-tight text-rose-950 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-rose-800"
+          className="rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-dark"
         >
-          Néctar<span className="text-amber-700">.</span>
-          <span className="sr-only"> Sorveteria — início</span>
+          <img
+            src="/images/nectar-logo.png"
+            alt="Néctar"
+            className="h-14 w-auto max-w-[min(12rem,70vw)] object-contain"
+          />
         </a>
         <nav aria-label="Navegação principal">
           <ul className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-sm font-medium text-stone-700">
@@ -24,7 +27,7 @@ export default function Header() {
               <li key={href}>
                 <a
                   href={href}
-                  className="rounded-sm transition-colors hover:text-rose-800 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-rose-800"
+                  className="rounded-sm transition-colors hover:text-brand-dark focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-dark"
                 >
                   {label}
                 </a>

@@ -10,10 +10,10 @@ export default function LocationSection() {
       <div className="mx-auto max-w-7xl">
         <div className="mb-10 flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-amber-800">
+            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-brand-dark">
               Visite a gente
             </p>
-            <h2 className="mt-4 font-serif text-4xl font-semibold text-rose-950 sm:text-5xl">
+            <h2 className="mt-4 font-serif text-4xl font-semibold text-brand-dark sm:text-5xl">
               Estamos em Anápolis.
             </h2>
             <p className="mt-4 leading-7 text-stone-700">
@@ -24,12 +24,12 @@ export default function LocationSection() {
             href="https://maps.app.goo.gl/b5fu9BWxFNAwJimM9"
             target="_blank"
             rel="noreferrer"
-            className="w-fit rounded-full border border-rose-900/30 px-6 py-3 text-sm font-semibold text-rose-950 transition-colors hover:bg-rose-900/5 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-rose-900"
+            className="w-fit rounded-full border border-brand/40 px-6 py-3 text-sm font-semibold text-brand-dark transition-colors hover:bg-brand-light focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-dark"
           >
             Ver no Google Maps
           </a>
         </div>
-        <div className="aspect-[4/3] overflow-hidden rounded-3xl bg-amber-100 shadow-sm sm:aspect-[16/7]">
+        <div className="aspect-[4/3] overflow-hidden rounded-3xl bg-brand-light shadow-sm sm:aspect-[16/7]">
           <iframe
             src={mapEmbedUrl}
             title="Mapa com a localização da Néctar Sorveteria na Rua Mauá, 767, Anápolis"

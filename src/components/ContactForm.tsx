@@ -32,21 +32,21 @@ export default function ContactForm() {
   return (
     <section
       id="contato"
-      className="scroll-mt-28 bg-rose-950 px-5 py-20 text-white sm:px-8 sm:py-28"
+      className="scroll-mt-28 bg-brand-dark px-5 py-20 text-white sm:px-8 sm:py-28"
     >
       <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.8fr_1.2fr]">
         <div>
-          <p className="text-sm font-semibold uppercase tracking-[0.22em] text-amber-300">
+          <p className="text-sm font-semibold uppercase tracking-[0.22em] text-brand-light">
             Vamos conversar?
           </p>
           <h2 className="mt-4 font-serif text-4xl font-semibold sm:text-5xl">
             Mande uma mensagem.
           </h2>
-          <p className="mt-5 max-w-md leading-7 text-rose-50/80">
+          <p className="mt-5 max-w-md leading-7 text-white/80">
             Preencha seus dados e continue a conversa com a Néctar pelo
             WhatsApp.
           </p>
-          <p className="mt-8 font-medium text-amber-200">
+          <p className="mt-8 font-medium text-brand-light">
             {whatsappNumber ?? 'Contato indisponível no momento.'}
           </p>
         </div>
@@ -67,7 +67,7 @@ export default function ContactForm() {
                 required
                 value={name}
                 onChange={(event) => setName(event.target.value)}
-                className="w-full rounded-xl border border-stone-300 px-4 py-3 outline-none transition focus:border-rose-800 focus:ring-2 focus:ring-rose-800/20"
+                className="w-full rounded-xl border border-stone-300 px-4 py-3 outline-none transition focus:border-brand-dark focus:ring-2 focus:ring-brand-dark/20"
                 aria-describedby="contact-privacy"
               />
             </div>
@@ -85,7 +85,7 @@ export default function ContactForm() {
                 rows={5}
                 value={message}
                 onChange={(event) => setMessage(event.target.value)}
-                className="w-full resize-y rounded-xl border border-stone-300 px-4 py-3 outline-none transition focus:border-rose-800 focus:ring-2 focus:ring-rose-800/20"
+                className="w-full resize-y rounded-xl border border-stone-300 px-4 py-3 outline-none transition focus:border-brand-dark focus:ring-2 focus:ring-brand-dark/20"
                 aria-describedby="contact-privacy"
               />
             </div>
@@ -103,7 +103,7 @@ export default function ContactForm() {
             )}
             <button
               type="submit"
-              className="mt-6 w-full rounded-full bg-rose-900 px-6 py-3.5 font-semibold text-white transition-colors hover:bg-rose-800 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-rose-900"
+              className="mt-6 w-full rounded-full bg-brand-dark px-6 py-3.5 font-semibold text-white transition-colors hover:bg-brand-hover focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-dark"
             >
               Continuar para o WhatsApp
             </button>
